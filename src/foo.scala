@@ -2,6 +2,9 @@ import java.util.concurrent.{Executor, Executors, TimeUnit}
 
 object foo extends App {
   val cfg = Config.fromArgs(args)
+  def dataLinkRecieve: Unit = {
+    println("dataLinkRecieve")
+  }
   def doStuff(): Unit = {
     dataLinkRecieve
     println(System.currentTimeMillis())
